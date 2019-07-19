@@ -1,7 +1,7 @@
 1 - Criar super usuário
 docker exec -it xxxxxxx bash
 source venv/bin/activate
-echo "from helios_auth.models import User; User.objects.create(user_type='google',user_id='fred@ufop.edu.br', info={'name':'Frederico Gonçalves'})" | python manage.py shell
+python manage.py createsuperuser
 
 2 - Alterar o tamanho da columa last_name da tabela auth_user
 docker exec -it xxxxxxx bash

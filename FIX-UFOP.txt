@@ -1,0 +1,7 @@
+1 - Criar super usuário
+echo "from helios_auth.models import User; User.objects.create(user_type='google',user_id='shirlei@gmail.com', info={'name':'Shirlei Chaves'})" | python manage.py shell
+
+2 - Alterar o tamanho da columa last_name da tabela auth_user
+docker exec -it xxxxxxx bash
+psql -U helios helios
+ALTER TABLE auth_user ALTER last_name TYPE character varying(100); 

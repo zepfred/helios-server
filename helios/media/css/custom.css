@@ -43,12 +43,12 @@ a:hover, a:focus {
 
 .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #0f5f5c;
-    border-color: #0f5f5c;
+    background-color: #962038;
+    border-color: #962038;
 }
 
 .panel-primary {
-    border-color: #0f5f5c;    
+    border-color: #962038;    
 }
 
 :focus{
@@ -80,22 +80,22 @@ html {
 }
 
 .panel-info {
-    border-color: #0f5f5c;
+    border-color: #962038;
 }
 .panel-info > .panel-heading {
-    background-color: #0f5f5c;
+    background-color: #962038;
     color: #eef1ec;
 }
 
 .alert-info {
-    background-color: #0f5f5c;
-    border-color: #0f5f5c;
+    background-color: #962038;
+    border-color: #962038;
     color: #eef1ec;
 }
 
 .alert-warning {
-    background-color: #0f5f5c;
-    border-color: #0f5f5c;
+    background-color: #962038;
+    border-color: #962038;
     color: #eef1ec;
 }
 input {

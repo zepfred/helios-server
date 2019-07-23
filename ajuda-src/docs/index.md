@@ -1,6 +1,6 @@
 # Como votar usando o sistema de votação eletrônica
 
-
+Este manual é uma versão adaptada do material disponibilizado pelo Instituto Federal de Santa Catarina. O documento original está disponível no seguinte endereço: [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server)
 
 1. Para votar use as informações que recebeu por email (id do eleitor, senha e link da eleição).
     ![Autenticação do eleitor](img/eleitor-01.png "Autenticação do eleitor")

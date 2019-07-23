@@ -8,4 +8,4 @@ Nessa página (veja menu ao lado) estão disponíveis manuais de uso do Helios p
 - Gestor de eleição (responsável por criar e conduzir uma eleição)
 - Apurador humano (caso a eleição tenha sido criada com essa necessidade)
 
-Este manual é uma versão adaptada do material disponibilizado pelo Instituto Federal de Santa Catarina. O documento original está disponível no seguinte endereço: [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server)
+**Créditos:** Este manual é uma versão adaptada do material disponibilizado pelo Instituto Federal de Santa Catarina. O documento original está disponível no seguinte endereço: [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server)

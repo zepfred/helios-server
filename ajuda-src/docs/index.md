@@ -1,7 +1,5 @@
 # Como votar usando o sistema de votação eletrônica
 
-Este manual é uma versão adaptada do material disponibilizado pelo Instituto Federal de Santa Catarina. O documento original está disponível no seguinte endereço: [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server)
-
 1. Para votar use as informações que recebeu por email (id do eleitor, senha e link da eleição).
     ![Autenticação do eleitor](img/eleitor-01.png "Autenticação do eleitor")
 
@@ -31,4 +29,7 @@ Este manual é uma versão adaptada do material disponibilizado pelo Instituto F
 8. Parabéns, seu voto foi depositado com sucesso.
     ![Voto depositado com sucesso](img/eleitor-08.png "Tela final - voto depositado com sucesso")
 
-**Atenção:** O sistema Helios permite que você deposite cédulas na urna quantas vezes desejar. Porém, somente a última cédula depositada é a que será contabilizada na apuração da urna. Todas as cédulas anteriores serão descartadas.  
+**Atenção:** O sistema Helios permite que você deposite cédulas na urna quantas vezes desejar. Porém, somente a última cédula depositada é a que será contabilizada na apuração da urna. Todas as cédulas anteriores serão descartadas.
+
+**Créditos:** Este manual é uma versão adaptada do material disponibilizado pelo Instituto Federal de Santa Catarina. O documento original está disponível no seguinte endereço: [https://github.com/ifsc/helios-server](https://github.com/ifsc/helios-server)
+  

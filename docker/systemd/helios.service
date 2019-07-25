@@ -1,0 +1,15 @@
+[Unit]
+Description=Helios
+After=network.target
+Wants=docker.service
+
+[Service]
+Type=simple
+ExecStart=/root/helios/systemd/start.sh
+ExecStop=/root/helios/systemd/stop.sh
+TimeoutStartSec=0
+RemainAfterExit=1
+
+[Install]
+WantedBy=multi-user.target
+

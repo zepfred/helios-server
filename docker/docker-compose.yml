@@ -1,0 +1,56 @@
+version: "3.6"
+services:
+  postgres:
+    container_name: postgres
+    build:
+      dockerfile: Dockerfile
+      context: ./postgres-server
+    environment:
+      - POSTGRES_PASSWORD=helios
+      - POSTGRES_USER=helios
+      - POSTGRES_DB=helios
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+  helios:
+   container_name: helios
+   build:
+     dockerfile: Dockerfile
+     context: ./helios-server
+   environment:
+      - DEBUG=0
+      - ALLOWED_HOSTS=*
+      #- MASTER_HELIOS=1
+      - URL_HOST=http://localhost:5000
+      #- SECURE_URL_HOST=http://localhost:5000
+      - SECRET_KEY=helios
+      - SITE_TITLE=UFOP E-Voting System
+      - WELCOME_MESSAGE=Welcome to UFOP E-Voting System
+      - HELP_EMAIL_ADDRESS=email@votacao.com
+      - EMAIL_HOST=smtp.com
+      - EMAIL_PORT=9999
+      - EMAIL_HOST_USER=email@votacao.com
+      - EMAIL_HOST_PASSWORD=senha
+      - EMAIL_USE_TLS=1
+   #ports:
+   #  - 8000:8000
+   depends_on:
+     - postgres
+   volumes:
+      - heliosdata:/root/helios/helios-server-master/
+  helios-ajuda:
+    container_name: helios_ajuda
+    build:
+      dockerfile: Dockerfile
+      context: ./helios-ajuda
+  nginx:
+    container_name: nginx
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+     - 80:80
+    depends_on:
+     - helios
+volumes:
+  postgresdata:
+  heliosdata:

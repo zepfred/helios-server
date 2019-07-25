@@ -1,0 +1,37 @@
+upstream helios {
+  server helios:8000;
+}
+
+upstream helios-ajuda {
+  server helios_ajuda:80;
+}
+
+server {
+  listen 80;
+  server_name nome;
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  ssl_certificate /etc/nginx/<certificado>.crt;
+  ssl_certificate_key /etc/nginx/<chave>.key;
+
+  location / {
+    proxy_pass http://helios;
+  }
+ 
+  location /helios{
+    proxy_pass http://helios;
+  }
+  
+  location /ajuda {
+    proxy_pass http://helios-ajuda;
+  }
+  
+  location /ajuda-gestor {
+    proxy_pass http://helios-ajuda;
+  }
+
+}
+

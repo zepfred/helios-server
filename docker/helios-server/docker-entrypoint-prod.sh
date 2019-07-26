@@ -2,6 +2,8 @@
 
 trap "echo TRAPed signal" HUP INT QUIT KILL TERM
 
+rm -Rf /var/run/rabbitmq
+
 /etc/init.d/rabbitmq-server start
 
 #source venv/bin/activate

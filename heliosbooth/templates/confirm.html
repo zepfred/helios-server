@@ -10,10 +10,11 @@
 {#if $T.choices[$T.question$index].length < $T.question.max}
 <!--[you under-voted: you may select up to {$T.question.max}] -->
 
-[você não votou corretamente: você precisa selecionar até {$T.question.max} opção ou opções.]
+<!--[você não votou corretamente: você precisa selecionar até {$T.question.max} opção ou opções.] -->
+[Você pode selecionar até {$T.question.max} opções.]
 {#/if}
 &nbsp;&nbsp;&nbsp;
-[<a onclick="BOOTH.show_question({$T.question$index}); return false;" href="#">alterar</a>]
+[<a onclick="BOOTH.show_question({$T.question$index}); return false;" href="#">Alterar</a>]
 </p>
 {#/for}
 

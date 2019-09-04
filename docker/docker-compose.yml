@@ -26,6 +26,7 @@ services:
       - SITE_TITLE=UFOP E-Voting System
       - WELCOME_MESSAGE=Welcome to UFOP E-Voting System
       - HELP_EMAIL_ADDRESS=email@votacao.com
+      - DEFAULT_FROM_EMAIL=email@votacao.com
       - EMAIL_HOST=smtp.com
       - EMAIL_PORT=9999
       - EMAIL_HOST_USER=email@votacao.com

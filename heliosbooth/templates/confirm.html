@@ -6,7 +6,7 @@
 
 <b style="font-size:1.4em;">{#foreach $T.choices[$T.question$index] as choice}
 {$T.choice}{#if !$T.choice$last}, {#/if}
-{#/for}</b>
+{#/for}</b><br />
 {#if $T.choices[$T.question$index].length < $T.question.max}
 <!--[you under-voted: you may select up to {$T.question.max}] -->
 
